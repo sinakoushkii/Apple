@@ -4,9 +4,9 @@ import router from "./routes";
 
 const App = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-7">
       <p>navbar</p>
-      <Routes>
+      <Routes>footer
         {router.map((route, index) => (
           <Route key={index} path={route.path} element={<route.element />} />
         ))}
