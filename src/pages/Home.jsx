@@ -1,12 +1,10 @@
-
 import React from "react";
-import { Route, Router, Routes } from "react-router-dom";
 
 const Home = () => {
   return (
- <div>
-    home
- </div>
+    <div>
+      <p className="text-3xl font-bold underline">Home</p>
+    </div>
   );
 };
 
