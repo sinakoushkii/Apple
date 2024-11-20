@@ -6,7 +6,9 @@
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
       "@utils/*": ["src/utils/*"],
-      "@routes/*": ["src/routes/*"]
+      "@routes/*": ["src/routes/*"],
+      "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src"]
 }
