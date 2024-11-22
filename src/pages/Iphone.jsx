@@ -1,8 +1,11 @@
+import TopSlider from '@components/TopSlider'
 import React from 'react'
 
 const Iphone = () => {
   return (
-    <div>Iphone</div>
+    <div className='w-full'>
+      <TopSlider />
+    </div>
   )
 }
 
