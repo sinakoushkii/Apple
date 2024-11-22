@@ -46,9 +46,21 @@
     overscroll-behavior-inline: contain;
     scroll-behavior: smooth;
 }
-sliderItem{
-    width: 70px;
+.scrollButtonHandler{
+    position: absolute;
 }
+.RightBtn{
+    top: 35%;
+    right: -18px;
+}
+.leftBtn{
+    top: 35%;
+    left: -18px;
+}
+/* .sliderItem{
+    width: 70px;
+} */
+
 /* overFlow items without button */
 /* .slider{
     display: grid;
