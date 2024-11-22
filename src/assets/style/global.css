@@ -1,0 +1,39 @@
+.w-900 {
+  width: 900px;
+}
+.hideMenu {
+  display: none;
+  height: -100vh;
+}
+.showMenu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 50px;
+}
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+/* Hidden menu class */
+.hiddenMenu {
+    display: flex;
+  transform: translateY(-160%);
+}
+
+/* Visible menu class */
+.visibleMenu {
+  transform: translateY(0);
+}
