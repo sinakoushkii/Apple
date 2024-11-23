@@ -4,7 +4,7 @@ import Navbar from "@components/shared/Navbar";
 
 const App = () => {
   return (
-    <div className="container mx-auto px-7">
+    <div>
       <Navbar />
       <Routes>
         footer

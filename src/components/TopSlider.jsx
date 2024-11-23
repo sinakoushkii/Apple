@@ -15,7 +15,8 @@ const TopSlider = () => {
   };
 
   return (
-    <div className="topSliderContainer relative">
+    <div className="container mx-auto px-7">
+      <div className="topSliderContainer relative ">
       <button
         className={`scrollButtonHandler leftBtn block xl:hidden ${
           scrollPosition === 0 ? "hidden" : "block"
@@ -51,6 +52,7 @@ const TopSlider = () => {
       >
         <img width={15} height={15} src={right} />
       </button>
+    </div>
     </div>
   );
 };
