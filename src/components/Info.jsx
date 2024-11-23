@@ -1,7 +1,8 @@
 import React from "react";
 
 const Info = () => {
-  return (
+    // test
+    return (
     <div className="w-full flex items-center justify-center bg-gray-100 py-2">
       <div className="container mx-auto px-7 flex items-center justify-center text-center">
         <p className="text-sm">
