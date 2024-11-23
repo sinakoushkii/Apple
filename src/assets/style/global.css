@@ -75,6 +75,12 @@
     overscroll-behavior-inline: contain;
 } */
 
+/* welcome video */
+.welcomeVideo{
+  border-radius: 10px;
+}
+
+
 /* General */
 .w-900 {
   width: 900px;
