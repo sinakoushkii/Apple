@@ -15,7 +15,7 @@ const TopSlider = () => {
   };
 
   return (
-    <div className="w-full relative">
+    <div className="topSliderContainer relative">
       <button
         className={`scrollButtonHandler leftBtn block xl:hidden ${
           scrollPosition === 0 ? "hidden" : "block"
@@ -26,7 +26,7 @@ const TopSlider = () => {
       </button>
       <div
         ref={containerRef}
-        className="slider w-full py-4 border-r-2 border-l-2 border-slate-300"
+        className="slider w-full py-5 border-r-2 border-l-2 border-slate-300"
       >
         {topSliderLinks.map((item) => (
           <div

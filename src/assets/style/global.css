@@ -38,6 +38,11 @@
 }
 
 /* Top Slider */
+
+.topSliderContainer{
+  max-width: max-content;
+  margin: 0 auto;
+}
 .slider{
     display: grid;
     grid-auto-flow: column;
