@@ -43,22 +43,22 @@ const WelcomeVideo = () => {
 
   const videoPauseHandler = () => {
     setVideoPause((prev) => !prev);
-    if(videoPause){
-        videoRef.current.play();
-    }else{
-        videoRef.current.pause();
+    if (videoPause) {
+      videoRef.current.play();
+    } else {
+      videoRef.current.pause();
     }
   };
 
   return (
-    <div className="container mx-auto mt-6 mb-96 pb-96">
+    <div className="container mx-auto mt-6 mb-96 pb-96 px-7 sm:px-0 ">
       <div className="w-full flex items-center justify-between px-16 py-9">
-        <span className="text-7xl font-semibold">iPhone</span>
-        <span className="text-3xl font-semibold">Design to be loved.</span>
+        <span className="text-7xl font-semibold hidden">iPhone</span>
+        <span className="text-3xl font-semibold hidden">Design to be loved.</span>
       </div>
       <div className="w-full mt-9 flex items-center justify-center relative">
         <video
-          className={`${videoWidth < 1600 ? "welcomeVideo" : ""}`}
+          className={`${videoWidth < 1600 ? "rounded-xl" : ""}`}
           //   controls={true}
           ref={videoRef}
           loop={true}
@@ -69,14 +69,18 @@ const WelcomeVideo = () => {
           <source src={iphoneVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <span className="rounded-full bg-gray-400 p-3 absolute left-0 bottom-0">
-          <img
-            width={30}
-            height={30}
-            onClick={() => videoPauseHandler()}
-            src={`${videoPause ? play : pause}`}
-          />
-        </span>
+        <div className="absolute  right-6 top-4 md:top-10 bottom-10 md:right-16 w-11">
+          {videoRef.current && (
+            <span className="flex items-center justify-center rounded-full bg-gray-400 px-2 py-3 cursor-pointer sticky right-6 top-4 md:top-10 md:right-16">
+              <img
+                width={20}
+                height={20}
+                onClick={() => videoPauseHandler()}
+                src={`${videoPause ? play : pause}`}
+              />
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );
