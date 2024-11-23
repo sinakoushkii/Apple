@@ -1,6 +1,5 @@
-.w-900 {
-  width: 900px;
-}
+
+/* NavBar */
 .hideMenu {
   display: none;
   height: -100vh;
@@ -29,11 +28,54 @@
 }
 /* Hidden menu class */
 .hiddenMenu {
-    display: flex;
+  display: flex;
   transform: translateY(-160%);
 }
 
 /* Visible menu class */
 .visibleMenu {
   transform: translateY(0);
+}
+
+/* Top Slider */
+
+.topSliderContainer{
+  max-width: max-content;
+  margin: 0 auto;
+}
+.slider{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+}
+.scrollButtonHandler{
+    position: absolute;
+}
+.RightBtn{
+    top: 35%;
+    right: -18px;
+}
+.leftBtn{
+    top: 35%;
+    left: -18px;
+}
+/* .sliderItem{
+    width: 70px;
+} */
+
+/* overFlow items without button */
+/* .slider{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+} */
+
+/* General */
+.w-900 {
+  width: 900px;
 }

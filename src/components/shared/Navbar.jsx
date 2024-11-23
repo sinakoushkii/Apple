@@ -18,7 +18,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="container mx-auto px-7 relative">
       <div className="w-full flex justify-center">
         <div className="flex items-center justify-between py-3 w-900">
           <img src={appleIcon} width={15} />
