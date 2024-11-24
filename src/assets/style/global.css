@@ -59,6 +59,33 @@
     left: -18px;
 }
 
+/********************* Card *********************/
+.card{
+  position: relative;
+  border-radius: 25px;
+  max-width: 405px;
+  height: 740px;
+  overflow: hidden;
+}
+.card__title-wrapper{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  z-index: 3;
+}
+.card__plus-btn{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.card__main-img{
+  width: 100%;
+  object-fit: cover;
+  height: 740px;
+  /* border-radius: 50px; */
+}
 /********************* General *********************/
 .w-900 {
   width: 900px;
