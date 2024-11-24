@@ -50,7 +50,6 @@ export const topSliderLinks=[
     {label:"iOS 18",route:ios},
     {label:"Shop iPhone",route:shopIphone},
 ]
-
 export const cardData=[
     {   id:1,
         subTitle:"Apple Intelligence",
