@@ -1,31 +1,23 @@
 import ReactDom from "react-dom";
 import React from "react";
-const MODAL_STYLES = {
-  position: "fixed",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  backgroundColor: "#FFF",
-  padding: "50px",
-  zIndex: 1000,
-};
 
-const OVERLAY_STYLES = {
-  position: "fixed",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: "rgba(0, 0, 0, .7)",
-  zIndex: 1000,
-};
+const CardModal = ({ card, children, onClose }) => {
+  const closePortal = (e) => {
+    if (
+      e.target.className === "modal-overlay" ||
+      e.target.className === "closeModalBtn"
+    ) {
+        onClose();
+    }
 
-const CardModal = ({ isOpen, children }) => {
-  if (!isOpen) null;
+  };
+
   return ReactDom.createPortal(
-    <div style={OVERLAY_STYLES}>
-      <div style={MODAL_STYLES}>
-        <button onClick={onClose}>Close Modal</button>
+    <div className="modal-overlay" onClick={(e) => closePortal(e)}>
+      <div className="modal">
+        <button className="closeModalBtn" onClick={(e) => closePortal(e)}>
+          Close
+        </button>
         {children}
       </div>
     </div>,
