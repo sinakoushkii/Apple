@@ -1,5 +1,5 @@
 
-/* NavBar */
+/********************* NavBar *********************/
 .hideMenu {
   display: none;
   height: -100vh;
@@ -26,19 +26,15 @@
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
-/* Hidden menu class */
 .hiddenMenu {
   display: flex;
   transform: translateY(-160%);
 }
-
-/* Visible menu class */
 .visibleMenu {
   transform: translateY(0);
 }
 
-/* Top Slider */
-
+/********************* Top Slider *********************/
 .topSliderContainer{
   max-width: max-content;
   margin: 0 auto;
@@ -63,8 +59,7 @@
     left: -18px;
 }
 
-
-/* General */
+/********************* General *********************/
 .w-900 {
   width: 900px;
 }

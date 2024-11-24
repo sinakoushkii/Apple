@@ -1,3 +1,4 @@
+import CardWrapper from '@components/cards/CardWrapper'
 import Info from '@components/Info'
 import TopSlider from '@components/TopSlider'
 import WelcomeVideo from '@components/WelcomeVideo'
@@ -9,6 +10,7 @@ const Iphone = () => {
       <TopSlider />
       <Info />
       <WelcomeVideo />
+      <CardWrapper />
     </div>
   )
 }
