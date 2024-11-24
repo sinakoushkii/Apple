@@ -60,10 +60,18 @@
 }
 
 /********************* Card *********************/
+.card-wrapper {
+  overflow-x: scroll; /* Enables horizontal scrolling */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer/Edge */
+}
+.card-wrapper::-webkit-scrollbar{
+  display: none; /* Hides scrollbar in Chrome, Safari, Edge */
+}
 .card{
   position: relative;
   border-radius: 25px;
-  max-width: 405px;
+  width: 405px;
   height: 740px;
   overflow: hidden;
 }
