@@ -12,8 +12,6 @@ import ios from "../assets/icons/ios.svg"
 import shopIphone from "../assets/icons/shopIphone.svg"
 
 
-
-
 export const navbarLinks=[
     {label:"Store",route:"/"},
     {label:"Mac",route:"/"},
