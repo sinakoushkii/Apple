@@ -2,15 +2,18 @@ import React, { useRef, useState } from "react";
 import Card from "./Card";
 import { cardData } from "@/constants";
 import CardModal from "@components/CardModal";
+import leftBtn from "../../assets/icons/left.png"
+import rightBtn from "../../assets/icons/right.png"
 
 const CardWrapper = () => {
+  // console.log(document.getElementById("root")
   //states to handle the card modal
   const body = document.getElementById("root");
   const [showCardModal, setShowCardModal] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
   //states to handle the slider
-  const itemWidth = 150;
+  const itemWidth = 220;
   const [scrollPosition, setScrollPosition] = useState(0);
   const containerRef = useRef();
 
@@ -56,8 +59,8 @@ const CardWrapper = () => {
           ))}
         </div>
         <div className="flex items-center justify-center gap-3 self-end mt-3">
-          <span onClick={()=>handleScroll(-itemWidth)}>left</span>
-          <span onClick={()=>handleScroll(itemWidth)}>right</span>
+          <img width={30} height={30} src={leftBtn} onClick={()=>handleScroll(-itemWidth)} />
+          <img width={30} height={30}src={rightBtn} onClick={()=>handleScroll(itemWidth)}/>
         </div>
       </div>
       {showCardModal && (
