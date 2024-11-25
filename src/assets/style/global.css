@@ -75,6 +75,7 @@
   height: 740px;
   overflow: hidden;
 }
+
 .card__title-wrapper{
   position: absolute;
   top: 20px;
@@ -124,4 +125,11 @@
 /********************* General *********************/
 .w-900 {
   width: 900px;
+}
+
+/********************* Media Query *********************/
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 260px;
+  }
 }
