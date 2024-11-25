@@ -1,5 +1,5 @@
 
-/* NavBar */
+/********************* NavBar *********************/
 .hideMenu {
   display: none;
   height: -100vh;
@@ -26,19 +26,15 @@
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
-/* Hidden menu class */
 .hiddenMenu {
   display: flex;
   transform: translateY(-160%);
 }
-
-/* Visible menu class */
 .visibleMenu {
   transform: translateY(0);
 }
 
-/* Top Slider */
-
+/********************* Top Slider *********************/
 .topSliderContainer{
   max-width: max-content;
   margin: 0 auto;
@@ -63,8 +59,77 @@
     left: -18px;
 }
 
+/********************* Card *********************/
+.card-wrapper {
+  overflow-x: scroll; /* Enables horizontal scrolling */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer/Edge */
+}
+.card-wrapper::-webkit-scrollbar{
+  display: none; /* Hides scrollbar in Chrome, Safari, Edge */
+}
+.card{
+  position: relative;
+  border-radius: 25px;
+  width: 405px;
+  height: 740px;
+  overflow: hidden;
+}
 
-/* General */
+.card__title-wrapper{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  z-index: 3;
+}
+.card__plus-btn{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.card__main-img{
+  width: 100%;
+  object-fit: cover;
+  height: 740px;
+  /* border-radius: 50px; */
+}
+/********************* card modal *********************/
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+
+}
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 50px;
+  z-index: 1000;
+  max-width: 800px;
+}
+.blur {
+  filter: blur(5px); /* Adjust the blur strength */
+  transition: filter 0.5s ease; /* Smooth transition */
+}
+
+/********************* General *********************/
 .w-900 {
   width: 900px;
+}
+
+/********************* Media Query *********************/
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 260px;
+  }
 }
